@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: system-ui, sans-serif;
+  font: Lacquer;
   line-height: 1.5;
   color: #333;
   padding: 1rem;
@@ -31,7 +31,24 @@ body {
   margin-top: 2rem;
 }
 .hero-text h1 {
-  font-size: 2.5rem;
+  color: #387a61;
+  text-align: center;
+  font-family: Lacquer;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.12rem;
+}
+.hero-text h2 {
+  color: #387a61;
+  text-align: center;
+  font-family: Lacquer;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.12rem;
 }
 .hero-text p {
   font-size: 1.125rem;
@@ -49,9 +66,14 @@ section {
   padding: 4rem 0;
 }
 section h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  color: #387a61;
   text-align: center;
+  font-family: Lacquer;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.12rem;
 }
 section p {
   max-width: 600px;
@@ -73,4 +95,17 @@ section p {
   .hero-lottie {
     flex: 1;
   }
+}
+@font-face {
+  font-family: "Lacquer";
+  src: url("fonts/Lacquer-Regular.woff2") format("woff2"),
+    url("fonts/Lacquer-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.lacquer-regular {
+  font-family: "Lacquer", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
