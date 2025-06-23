@@ -52,6 +52,45 @@ body {
   margin: 0 auto;
 }
 
+.hero-text a {
+  position: relative;
+  display: inline-block;
+  color: #23abd862;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.hero-text a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 3px;
+  background: #2399e3;
+  transition: width 0.3s ease;
+}
+
+.hero-text a:hover {
+  color: #e1ac0d;
+  animation: pulse 1s infinite alternate;
+}
+
+.hero-text a:hover::after {
+  width: 100%;
+}
+
+/* 4. Pulse keyframes */
+@keyframes pulse {
+  from {
+    text-shadow: 0 0 0 rgba(210, 160, 33, 0.7);
+  }
+  to {
+    text-shadow: 0 0 12px rgba(4, 145, 200, 0.9);
+  }
+}
+
 /* Sections */
 section {
   padding: 4rem 0;
