@@ -4,17 +4,15 @@
   box-sizing: border-box;
 }
 body {
-  font: "Indie Flower", cursive;
-  line-height: 1.5;
   color: #333;
-  padding: 1rem;
+  padding: 0.5rem;
   background: #f9f2de;
 }
 
 /* Container */
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -38,8 +36,8 @@ body {
   font-size: 1.2rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 2rem;
-  letter-spacing: 0.35rem;
+  line-height: 1.8rem;
+  letter-spacing: 0.3rem;
 }
 
 .hero-text p {
@@ -49,10 +47,14 @@ body {
 .hero-lottie {
   width: 100%;
   max-width: 500px;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto;
 }
 .hero-lottie dotlottie-wc {
   display: block;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: auto;
 }
@@ -60,7 +62,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem 1rem;
+  padding: 1rem 1rem 1rem 1rem;
 }
 
 .hero-text a {
